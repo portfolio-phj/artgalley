@@ -15,6 +15,7 @@ function Gallery() {
     },
     [landscapelist]
   );
+  1;
 
   useEffect(function () {
     fetchdata();
