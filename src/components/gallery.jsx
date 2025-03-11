@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axiosInstance from "../apis/axiosinstance";
 
 function Gallery() {
-  const [landscapelistt, setlandscapelist] = useState([]);
+  const [landscapelist, setlandscapelist] = useState([]);
   async function fetchdata() {
     const response = await axiosInstance.get("/search", {
       params: { q: "landscape" },
@@ -11,7 +11,7 @@ function Gallery() {
   }
   useEffect(
     function () {
-      console.log(landscapelistt);
+      console.log(landscapelist);
     },
     [landscapelist]
   );
@@ -21,7 +21,7 @@ function Gallery() {
     fetchdata();
   }, []);
 
-  return <Getimg />;
+  return;
 }
 
 export default Gallery;
