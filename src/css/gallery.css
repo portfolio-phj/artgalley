@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#gallery-background {
+  background-color: #ecebde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
